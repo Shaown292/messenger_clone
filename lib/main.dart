@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:messenger_clone/chat_home/chat_home.dart';
 import 'package:messenger_clone/chats/chats.dart';
 
 void main() {

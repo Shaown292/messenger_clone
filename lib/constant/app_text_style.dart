@@ -8,4 +8,15 @@ class AppTextStyle {
     fontWeight: FontWeight.w700,
   );
 
+  static TextStyle textStyle30BlackW400 = GoogleFonts.abyssinicaSil(
+    fontSize: 30,
+    color: Color(0xFF000000),
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle textStyle16BWhiteW400 = GoogleFonts.abyssinicaSil(
+    fontSize:16,
+    color: Color(0xFFFFFFFF),
+    fontWeight: FontWeight.w400,
+  );
+
 }

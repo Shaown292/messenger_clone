@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:messenger_clone/constant/app_text_style.dart';
 
 
 
@@ -48,6 +49,15 @@ class ChatScreen extends StatelessWidget {
             child: ListView(
               padding: EdgeInsets.all(12),
               children: [
+                // Container(
+                // padding: EdgeInsets.all(10),
+                //   // width: 200,
+                //   decoration: BoxDecoration(
+                //     borderRadius: BorderRadius.circular(20),
+                //     color: Colors.red
+                //   ),
+                //   child: Text("Hello", style: AppTextStyle.textStyle16BWhiteW400,),
+                // ),
                 _buildMessage("Do you know what time is it?", false),
                 _buildMessage("It’s morning in Tokyo 😎", true),
                 Center(child: Text("11:40", style: TextStyle(color: Colors.grey))),
