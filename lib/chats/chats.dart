@@ -26,11 +26,18 @@ class ChatScreen extends StatelessWidget {
       appBar: AppBar(
         title: Row(
           children: [
-            CircleAvatar(
-              backgroundImage: AssetImage('assets/images/chat1.png'), // Add asset
+            Container(
+              height: 40,
+              width: 40,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Color(0xFF000000).withOpacity(0.04),
+                image: DecorationImage(image: AssetImage("assets/images/camera_icon.png"
+                    ""))
+              ),
             ),
             SizedBox(width: 10),
-            Text("Martha Craig"),
+            Text("Martha Craig", style: AppTextStyle.textStyle30BlackW400,),
           ],
         ),
         backgroundColor: Colors.white,
@@ -45,6 +52,7 @@ class ChatScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
+          Text("You: My Text 9:30 AM", style: AppTextStyle.textStyle30BlackW400,),
           Expanded(
             child: ListView(
               padding: EdgeInsets.all(12),
@@ -58,7 +66,7 @@ class ChatScreen extends StatelessWidget {
                 //   ),
                 //   child: Text("Hello", style: AppTextStyle.textStyle16BWhiteW400,),
                 // ),
-                _buildMessage("Do you know what time is it?", false),
+                _buildMessage("Do you know what time is it? Do you know what time is it?", false),
                 _buildMessage("It’s morning in Tokyo 😎", true),
                 Center(child: Text("11:40", style: TextStyle(color: Colors.grey))),
                 _buildMessage("What is the most popular meal in Japan?", false),

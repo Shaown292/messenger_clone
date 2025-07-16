@@ -22,6 +22,7 @@ class CustomTextFormField extends StatelessWidget {
   final TextStyle? hintTextStyle;
   final TextStyle? textStyle;
   final InputBorder? inputBorder;
+  final InputDecoration? inputDecoration;
 
   const CustomTextFormField({
     this.controller,
@@ -43,7 +44,7 @@ class CustomTextFormField extends StatelessWidget {
     this.contentPadding,
     this.hintTextStyle,
     this.inputBorder,
-    this.prefixIcon, this.textStyle,
+    this.prefixIcon, this.textStyle, this.inputDecoration,
   });
 
   @override
@@ -58,7 +59,7 @@ class CustomTextFormField extends StatelessWidget {
         minLines: minLine ?? 1,
         maxLines: maxLine ?? 1,
         readOnly: readOnly,
-        decoration: InputDecoration(
+        decoration:inputDecoration ?? InputDecoration(
             filled: true,
             border: inputBorder,
             fillColor: fillColor ?? const Color(0xFFFDFBFF),
